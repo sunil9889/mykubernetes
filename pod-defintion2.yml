@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: pod
+metadata:
+  name: mysql-pod
+  labels:
+    type: db
+    author: sunil
+spec:
+  containers:
+    -name: mydb
+     image: mysql
+     ports:
+       containerPorts: 3601
+       hostPorts: 8080
+     env:
+       - name: MYSQL_ROOT_PASSWORD
+         value: 12345
+       - name: MYSQL_USER
+         value: myuser
+       - name: MYSQL_PASSWORD
+         value: mypassword
+
+
+
