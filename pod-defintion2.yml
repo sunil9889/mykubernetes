@@ -15,7 +15,7 @@ spec:
        hostPorts: 8080
      env:
        - name: MYSQL_ROOT_PASSWORD
-         value: 12345
+         value: 123456
        - name: MYSQL_USER
          value: myuser
        - name: MYSQL_PASSWORD
