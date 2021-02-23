@@ -5,7 +5,7 @@ metadata:
   name: mysql-pod
   labels:
     type: db
-    author: sunilk
+    author: sunil
 spec:
   containers:
     -name: mydb
