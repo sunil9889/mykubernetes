@@ -1,0 +1,12 @@
+---
+apiversion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    type: proxy
+    author: sunil
+spec:
+  containers:
+    -name: appserver
+     image: nginx
