@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod1
+  labels:
+   author: sunil
+spec:
+   containers:
+     - name: appserver
+       image: skk8090/swarm_nginx:v1
+       ports:
+        - containerPort: 8080
+          hostPort: 80
